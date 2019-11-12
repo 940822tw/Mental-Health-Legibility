@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mental Health Legacy 2019</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <script src="skrollr.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
+  <meta property="og:description" content="2019년을 살아가는 현대인을 위한 정신건강지식">
+  <!-- <meta property="og:image" content="src/s1-c.jpg"> -->
+  <!-- <link rel="shortcut icon" href="src/favicon.ico"> -->
+  <!-- <link rel="icon" href="src/favicon.ico"> -->
+</head>
+
+<body style="height:10000px">
+<header>Web font Test</header>
+<!-- <div class="offset"></div> -->
+  <div id="skrollr-body">
+    <div id=container>
+    <section id="s1">scene1</section>
+    <section id="s2" data-smooth-scrolling="on" data-0="top:100%" data-2000="top:0%">scene2</section>
+    <section id="s3" data-smooth-scrolling="on" data-4000="top:100%" data-6000="top:0%">scene3</section>
+    <section id="s4" data-smooth-scrolling="on" data-6000="top:100%" data-8000="top:0%">scene4</section>
+  </div>
+</div>
+</body>
+
+
+<script type="text/javascript">
+   var s = skrollr.init({forceHeight: true, smoothScrollingDuration: 500, edgeStrategy: 'set',
+   mobileCheck: function(){if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){}}});
+</script>
+</html>
