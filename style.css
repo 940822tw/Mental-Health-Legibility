@@ -1,11 +1,12 @@
 
 html{margin: 0; padding: 0;}
 body{margin: 0; padding: 0; overflow-x: hidden;}
+::selection {background: white}
 .offset{height: 100px;}
 section{padding-top: 100px; position: 0%}
 #container{width: 100vw; height: 100vh; overflow: scroll;}
 #s1{width:100vw; height: 100vh; position: fixed; background-color: #fff;}
-#s2{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #FBAF5F}
+#s2{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%;}
 #s3{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #A2D0CF}
 #s4{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #58574B}
 #s5{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #E3DFD6}
@@ -19,11 +20,28 @@ header{width: 100vw; height: 80px; background-image: url("src/h-bg.png"); backgr
 /***************************/
 #c11{font-size: 42px; font-weight: 200; position: absolute; top: 34%; left: 10%; line-height: 1.33}
 #c11 > .highlight{width: 220px; background-color: #396be3; opacity: 0.2; height: 13px; position: absolute; bottom: 4px; left: -1px;}
-#c12{font-size: 16px; font-weight: 200; position: absolute; top: calc(34% + 170px); left:calc(10% + 2px); line-height: 1.33}
+#c12{font-size: 16px; font-weight: 200; position: absolute; top: calc(34% + 170px); left:calc(10% + 2px); line-height: 1.45}
 #c13{font-size: 16px; font-weight: 200; position: absolute; width: 100vw; text-align: center; bottom: 130px; animation: c13 0.5s linear Infinite Alternate; color:#396be3}
 #c14{position: absolute; right: -130px; z-index: -1; height: 90%; top: 5%}
-#c15{}
 /***************************/
-#c21{}
+#c21{font-size:24px; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 38%; right: 13%}
+#c21 > .highlight{width: 182px; background-color: #396be3; opacity: 0.2; height: 13px; position: absolute; bottom: 40px; left: -1px;}
+#c200{position: absolute; left: 9%; top: 31%;}
+#c22 img{width: 50px; margin-left: 10px;}
+#c23 img{width: 50px; margin-left: 10px;}
+#c24 img{width: 50px; margin-left: 10px;}
+#c25 img{width: 50px; margin-left: 10px;}
+#c26{position: absolute; z-index: -1; height: 100vh; top: 0px; left: -140px;}
+.anim1{animation: anim1 0.5s ease-in-out Infinite Alternate;}
+.anim2{animation: anim2 0.5s ease-in-out Infinite Alternate;}
+
+
+#c23{}
+#c24{}
+#c25{}
+#c26{}
+
 
 @-webkit-keyframes c13 {0% {bottom:130px;} 100% {bottom:140px;}}
+@-webkit-keyframes anim1 {0% {transform: rotate(-15deg);} 100% {transform: rotate(30deg);}}
+@-webkit-keyframes anim2 {0% {transform: rotate(30deg);} 100% {transform: rotate(-15deg);}}
