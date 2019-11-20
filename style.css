@@ -1,47 +1,179 @@
 
 html{margin: 0; padding: 0;}
-body{margin: 0; padding: 0; overflow-x: hidden;}
-::selection {background: white}
+body{margin: 0; padding: 0; overflow-x: hidden;text-rendering: optimizeLegibility;}
+a:hover{cursor: pointer;}
+::selection {background-color: #e88674; color: #000;}
 .offset{height: 100px;}
-section{padding-top: 100px; position: 0%}
+section{padding-top: 0px; position: 0%}
+::-webkit-scrollbar {display: none;}
+.aligner {display: flex; align-items: center; justify-content: center;}
+/* #marker{position: fixed; bottom: 3px; left:0px; height: 3px; width: 0%; background-color: #333; z-index: 999;} */
 #container{width: 100vw; height: 100vh; overflow: scroll;}
 #s1{width:100vw; height: 100vh; position: fixed; background-color: #fff;}
-#s2{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%;}
-#s3{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #A2D0CF}
-#s4{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #58574B}
-#s5{width:100vw; height: 100vh; position: fixed; background-color: #fff;top: 100%; background-color: #E3DFD6}
-header{width: 100vw; height: 80px; background-image: url("src/h-bg.png"); background-position: center; box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .2); position: fixed; z-index: 999; color:white}
+#s2{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-1m.png"); top: 100%; background-position: center; background-size: cover;}
+#s3{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-2s.png"); top: 100%; background-position: center; background-size: cover;}
+#s4{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-3.jpg");top: 100%; background-color: #fff; display: table-cell;
+    vertical-align: middle;}
+#s5{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-4.jpg");top: 100%; background-position: center; background-size: cover;}
+#s6{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-5.jpg"); top: 100%; background-position: center; background-size: cover;}
+#s7{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-8.png"); top: 100%; background-position: center; background-size: cover;}
+#s8{width:100vw; height: 100vh; position: fixed; background-image: url("src/bg-8.png"); background-color: #f1f1f1; top: 100%; background-position: center; background-size: cover;}
+#s9{width:100vw; height: 100vh; position: fixed; background-color: #fff; top: 100%; background-position: center; background-size: cover;}
+
+#header{width: 100vw; height: 80px; background-image: url("src/h-bg.png"); background-position: center; background-size: cover;box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1); position: fixed; z-index: 999; color:white; font-weight: 700}
+#top{width: 3vw; height: 3vw; font-size: 12px; color: white; font-weight: 600; background-color: #000; position: fixed; bottom: 1.5vw; right: 1.5vw; border-radius: 50px; z-index: 999;  text-align: center; box-sizing: border-box; padding-top: 7px;}
+#top:hover{transform-origin: center; transform: scale(1.3); transition: 0.5s; cursor: pointer;}
 
 /***************************/
 #h0{float: left; height: 70%; margin-top:13px; margin-left: 10%;}
-#h1{float: left; font-weight: 700; margin-top:21px; margin-left: 15px; line-height: 1.3;}
-#h2{position: absolute; right: 10%; width: 50%; text-align: right; font-size: 20px; font-weight: 600; height: 100%}
+#h1{float: left; font-weight: 700; margin-top:26px; margin-left: 14px; line-height: 1.1;}
+#h2{position: absolute; right: 10%; width: 50%; text-align: right; font-size: 20px; font-weight: 700; height: 100%}
 #h2 > a{margin: 29px 0px 0px 50px; display: inline-block;}
+#h2:hover{cursor: pointer;}
+
 /***************************/
-#c11{font-size: 42px; font-weight: 200; position: absolute; top: 34%; left: 10%; line-height: 1.33}
-#c11 > .highlight{width: 220px; background-color: #396be3; opacity: 0.2; height: 13px; position: absolute; bottom: 4px; left: -1px;}
-#c12{font-size: 16px; font-weight: 200; position: absolute; top: calc(34% + 170px); left:calc(10% + 2px); line-height: 1.45}
-#c13{font-size: 16px; font-weight: 200; position: absolute; width: 100vw; text-align: center; bottom: 130px; animation: c13 0.5s linear Infinite Alternate; color:#396be3}
+
+#c11{font-size: 3.6vw; font-weight: 200; position: absolute; top: 34%; left: 10%; line-height: 1.33}
+#c11 > .highlight{width: 19vw; background-color: #396be3; opacity: 0.2; height: 1vw; position: absolute; bottom: 10px; left: -4px;}
+#c12{font-size: 1vw; font-weight: 200; position: absolute; top: calc(34% + 13vw); left:calc(10% + 2px); line-height: 1.56}
+#c13{font-size: 1vw; font-weight: 400; position: absolute; width: 100vw; text-align: center; bottom: 0px; animation: c13 0.5s linear Infinite Alternate; color:#396be3}
 #c14{position: absolute; right: -130px; z-index: -1; height: 90%; top: 5%}
-/***************************/
-#c21{font-size:24px; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 38%; right: 13%}
-#c21 > .highlight{width: 182px; background-color: #396be3; opacity: 0.2; height: 13px; position: absolute; bottom: 40px; left: -1px;}
-#c200{position: absolute; left: 9%; top: 31%;}
-#c22 img{width: 50px; margin-left: 10px;}
-#c23 img{width: 50px; margin-left: 10px;}
-#c24 img{width: 50px; margin-left: 10px;}
-#c25 img{width: 50px; margin-left: 10px;}
-#c26{position: absolute; z-index: -1; height: 100vh; top: 0px; left: -140px;}
+.main-ch{width: 300px; position: absolute; animation: anim4-1 2s ease-in-out; transform: translateX(-50%) translateY(-50%); opacity: 0.8}
+
+/***************알고계신가요************/
+
+#c21{font-size:2vw; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 3vw; right: 6%;  transform: translateY(-50%);
+background-color: #fff; border-radius: 20px; width: 40%; height: 25%; padding-top:50px; padding-left: 50px; box-shadow: 0px 0px 8px -1px #ccc; }
+#c21 > .highlight{width: 15vw; background-color: #f67261; opacity: 0.2; height: 1vw; position: absolute; bottom: 7.3vw; left: 50px;}
+#c200{position: absolute; left: 9vw; top: 50%; transform: translateY(-50%)}
+#c200 img{width: 160px; animation: anim1 0.5s ease-in-out Infinite Alternate; }
+#c21-t{ transform: translateY(-50%); position: absolute; top: 50%}
+#c22 img{width: 3.3vw; margin-left: 10px;}
+#c23 img{width: 3.3vw; margin-left: 10px;}
+#c24 img{width: 3.3vw; margin-left: 10px;}
+#c25 img{width: 3.3vw; margin-left: 10px;}
+#c26{position: absolute; z-index: -1; height: 100vh; width: 100%; top: 0px;}
 .anim1{animation: anim1 0.5s ease-in-out Infinite Alternate;}
 .anim2{animation: anim2 0.5s ease-in-out Infinite Alternate;}
+/*************************/
+#c31{font-size:2vw; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 50%; left: 13%; color: #fff; transform: translateY(-50%)}
+#c32{font-size:2vw; font-weight: 800; text-align: left; line-height: 1.5; position: absolute; top: 24.5%; right: 15%; color: #fff; transform: translateY(-50%)}
+#c32 hr{width: 20%; height: 0px; border: 1px solid #fff;}
+#c320{font-size: 1.35vw; font-weight: 200; text-align: left; line-height: 1.13; position: absolute; top: 18vw; right: 26%; color: #fff; width: 30vw;text-align: right; transform: translateY(-50%);}
+#c330{position: absolute; top: 50%; right: 9%; line-height: 2; transform: translateY(-50%); display: inline-block;}
+#c330 > div{width: 100px; height: 1.35vw; background-color: #fff; font-size: 18px; text-align: right; padding-right: 5px;}
+
+/*************************/
+#c40{transform: translateY(-50%); position: absolute; top: 50%; width: 100vw; text-align: center; line-height: 1.5;}
+#c401{display:inline-block; font-size: 2vw}
+#c402{display:inline-block; font-size: 2vw}
+#c403{height: 50vh; width: 100vw;}
+#c403 > div{height: 45px; padding-left: 4vw; padding-right: 4vw; background-color: #357fff; border-radius: 100px; position: absolute; transform: translateX(-50%) scale(1.2);}
+#c403 > div > span{transform: translateY(-50%); top: 25%; position: absolute; width: auto; transform: translateX(-50%); color: #fff;}
+
+/*************************/
+#c51{transform: translateY(-50%); position: absolute; top: 50%; text-align: center; width: 100vw; font-size: 2vw; line-height: 1.5;}
+#c52{transform: translateY(-50%) translateX(-50%); position: absolute; top: 50%; width: 22%}
+/*****************************/
+#c61{font-size:2vw; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 18%; left: 50%; transform: translateY(-50%) translateX(-50%); text-align: center;}
+#c62{width: 100vw; height: 20vh; position: absolute; top: 65%; transform: translateY(-50%);}
+
+#c621{height: 3px; width: 10%; background-color: #333; position: absolute; top: 60%; transform: translateY(-50%);}
+#c622{text-align: center; display: inline-block; transform: translateX(-50%) translateY(-50%); top:0%; left:25%; position: absolute;} #c622 img{width: calc(200px + 4vw);}
+#c623{text-align: center; display: inline-block; transform: translateX(-50%) translateY(-50%); top:0%; left:50%; position: absolute;} #c623 img{width: calc(200px + 4vw);}
+#c624{text-align: center; display: inline-block; transform: translateX(-50%) translateY(-50%); top:0%; left:75%; position: absolute;} #c624 img{width: calc(200px + 4vw);}
+
+#c63{font-size:2vw; font-weight: 400; text-align: left; line-height: 1.5; position: absolute; top: 18%; left: 50%; transform: translateY(-50%) translateX(-50%); text-align: center;}
+#c64 img{width: 35%; position: absolute; top: 55%; left: 50%; transform: translateY(-50%) translateX(-50%);}
+#c71{transform: translateX(-50%) translateY(-50%); position: absolute; top: 40%; left: 50%; width: 100vh; text-align: center;}
+#c71 img{width: 40%;}
+#c72{width: 100%; text-align: center; font-size: 2vw; line-height: 1.5; transform: translateX(-50%) translateY(-50%); position: absolute; top: 70%; left: 50%; }
+
+#c81{transform: translateX(-50%) translateY(-50%); position: absolute; top: 40%; left: 50%; width: 100vh; text-align: center}
+#c81 img{width: 60%; transition: 1s; z-index: 999; opacity: 0.8}
+#c81 img:hover{width:62%; transition: 1s; z-index: 999; cursor: pointer; opacity: 1;}
+#c82{width: 100%; text-align: center; font-size: 2vw; line-height: 1.5; transform: translateX(-50%) translateY(-50%); position: absolute; top: 70%; left: 50%; }
+
+.card-dummy{width:200px; height: 100px;  box-shadow:0px 0px 9px -3px #888; position: fixed; top: 50%; left: 50%;transform: translateX(-50%) translateY(-50%); border-radius: 5px; background-color: #fff; z-index: -1;}
+
+#cardContainer{width: 440vw; height: calc(100vh - 130px); top:130px; box-sizing: border-box; padding-left: 10vw; padding-top: 50px; position: absolute;}
+#toolbar{background-color: #333; width: 100vw; height: 60px; position: fixed; z-index: 999; top:80px; box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .1); opacity: 1; box-sizing: border-box; padding-left: 10vw;}
+#toolbar:hover{opacity: 1; transition: 1s}
+input[type="text"]{outline-style: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; transform: translateY(-50%); position: relative; top:50%; border: 1px solid #333; background-color: #000; border-radius: 4px; height: 28px; color:#fff; font-size: 16px; padding-left: 10px; width:400px;}
+label{font-size: 16px; color: #fff; transform: translateY(-50%); position: relative; top:25%; margin-right: 10px;}
 
 
-#c23{}
-#c24{}
-#c25{}
-#c26{}
+.card{width: 25vw; height: 15.5vh; background-color: #fff; display: inline-block; margin-right: 45px; margin-bottom: 2.7vh; opacity: 0.73; border-radius: 6px; overflow: hidden; box-shadow:0px 0px 9px -3px #333; transition: 1s}
+.card-wrapper{width:100%; height:100%; position: relative;}
+.card:hover{opacity: 1; transition: 1s; cursor: pointer; transform: scale(1.05); overflow: hidden; filter: saturate(1.3);  box-shadow:0px 0px 8px -2px #111;animation: anim1-1 0.5s ease-in-out Infinite Alternate;}
+.card-name{position: absolute; width: 90%; top:22.5%; left: 6%;}
+.card-name span{font-size: 11px; font-weight: 600; color: #333;}
+.name{font-size: 13px; font-weight: 800; color: #333; line-height: 1.8}
+
+.card-mention{position: absolute; width: 60%; top:50%; left: 5%; font-weight: 600; transform: translateY(-50%); font-size: 2.3vh; white-space: pre-line;};
+.card-mention span{width: 60%; line-height: 1.43; text-shadow: 0px 0px 1px rgb(0,0,0,0.5);}
+.card-thumbnail{width: 100%; height: 100%; position: absolute;}
+.card-thumbnail img{width: 45%; z-index: -1; opacity: .99; position:absolute; right:-10%; bottom: -20%;}
+.card-bg{width: 100%; height: 100%; position: absolute;}
+.card-bg img{width: 110%; z-index: -3; opacity: 0.46; position:absolute; filter: blur(2.2px); transform: translateY(-50%); left: -5%}
+.card-bg2{width: 100%; height: 100%; position: absolute; z-index: -2; background-image: url("src/gr.png"); top:-64px; background-repeat: no-repeat; opacity: 0.3}
+/* .card-bg2 img{background-repeat: repeat-x; height: 110%;  opacity: .5; position:absolute; filter: blur(3px); transform: translateY(-50%); left: -5%} */
+.keyword{font-size: 12px; font-weight: 600; color: #222; display: inline-block; position: relative; top: -1px; text-overflow:ellipsis; white-space:nowrap;}
+#s9-bg{position: fixed;z-index: -4; top: -10%; left: 0%; height: 110vh;}
+#s9-bg img{height: 110vh; filter: blur(3px); animation: anim3 10s ease-in-out Infinite Alternate; position: relative;}
+#slider{height: 5px; width: 100px; bottom:4px; border-radius: 5px; background-color: #333; position: fixed; z-index: 999;}
+
+.modal-bg{width: 100vw; height: 100vh; position: fixed; top:0; left: 0; background-color: #000; opacity: .7; z-index:1000}
+.modal{animation: anim4 0.2s ease-in; width: 100vw; height: 100vh; position: fixed; top:0; left: 0; z-index: 1001; }
+.modal-content{position: absolute; background-color: #fff; z-index: 1002; transform: translateX(-50%) translateY(-50%); width: 40vw; height: 90vh; top: 50%; left: 50%;border-radius: 4px; overflow: hidden;}
+.close{position: absolute; right: 25px; top: 23px;}
+.close img{ width: 26px; height: 26px; opacity: .7;}
+.close:hover{cursor: pointer}
+
+.modal-img-bg{animation: anim5 2s ease-in-out; width: 75%; position: absolute; left: 50%; top:20%; transform: translateX(-50%) translateY(-50%);}
+.modal-img-ch{animation: anim6 2s ease-in-out; width: 75%; transition: 1s; position: absolute; left: 50%; top:20%; transform: translateX(-50%) translateY(-50%);}
+.modal-img-ch:hover{width: 77%; transition: 1s;}
+.modal-nameKor{position: absolute; top:38%; width: 100%; text-align: center; font-weight: 700; font-size: 40px;}
+.modal-nameEng{position: absolute; top:calc(38% + 52px); width: 100%; text-align: center; font-size: 16px; font-weight: 600; opacity: .6}
+.modal-keyword{position: absolute; top:calc(38% + 75px); width: 100%; text-align: center; color: #555; font-size: 12px; font-weight: 600}
+.modal-summary{position: absolute; top:calc(38% + 110px); width: 100%; height: 50%; text-align: left; font-weight: 600; font-size: 20px; line-height: 1.46; white-space: pre-line;
+               box-sizing: border-box; padding-left: 40px; padding-right: 40px; padding-top: 30px; padding-bottom:50px; border-top: 1px solid #ccc; color: #333; background-color: #fafafa; overflow-y: scroll; }
+.category{color:#396be3}
 
 
-@-webkit-keyframes c13 {0% {bottom:130px;} 100% {bottom:140px;}}
-@-webkit-keyframes anim1 {0% {transform: rotate(-15deg);} 100% {transform: rotate(30deg);}}
-@-webkit-keyframes anim2 {0% {transform: rotate(30deg);} 100% {transform: rotate(-15deg);}}
+footer{width: 100vw; height: 60px; position: fixed; z-index: 999; bottom:0;  text-align: center;}
+footer > span{position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); font-size: 13px; font-weight: 700; color: #333; opacity: .8;}
+@-webkit-keyframes c13 {0% {bottom:30px;} 100% {bottom:20px;}}
+@-webkit-keyframes anim1 {0% {transform: rotate(-2deg);} 100% {transform: rotate(2deg);}}
+@-webkit-keyframes anim1-1 {0% {transform: rotate(-0.5deg) scale(1.02);} 100% {transform: rotate(0.5deg) scale(1.02);}}
+@-webkit-keyframes anim2 {0% {transform: rotate(2deg);} 100% {transform: rotate(-2deg);}}
+
+@-webkit-keyframes anim3 {0% {transform: scale(1)  rotate(0deg)} 100% {transform: scale(1.1) rotate(3deg);;}}
+@-webkit-keyframes anim4 {0% {opacity:0;} 100% {opacity: 1;}}
+@-webkit-keyframes anim4-1 {0% {opacity:0;} 100% {opacity: .9; }}
+
+@-webkit-keyframes anim5 {0% {filter:blur(3px); opacity:0} 50% {opacity:1; filter:blur(1px);} 100% {opacity: 1;}}
+@-webkit-keyframes anim6 {0% {opacity:0} 50% {opacity:0; width: 85%;} 100% {opacity: 1; width: 75%;}}
+
+#mobile{visibility: hidden;}
+
+
+@media (max-width: 767px) {
+#mobile{visibility: visible; background-color: #e1eeff}
+#container{visibility:hidden}
+#header{visibility:hidden}
+
+
+#mobile{animation: anim4 0.2s ease-in; width: 100vw; height: 100vh; position: fixed; top:0; left: 0; z-index: 1001; overflow: auto; white-space: nowrap; padding-left: 5vw; box-sizing: border-box;}
+.mobile-content{position: relative; display: inline-block;background-color: #fff; z-index: 1002; width: 90vw; height: 90vh; top: 5vw; border-radius: 8px; overflow: hidden; box-shadow:0px 0px 8px -2px #ddd; margin-right: 3vw;}
+.mobile-img-bg{width: 110%; position: absolute; left: 50%; top:20%; transform: translateX(-50%) translateY(-50%);}
+.mobile-img-ch{width: 110%; transition: 1s; position: absolute; left: 50%; top:20%; transform: translateX(-50%) translateY(-50%);}
+.mobile-img-ch:hover{width: 115%; transition: 1s;}
+.mobile-nameKor{position: absolute; top:38%; width: 100%; text-align: center; font-weight: 700; font-size: 32px;}
+.mobile-nameEng{position: absolute; top:calc(38% + 48px); width: 100%; text-align: center; font-size: 17px; font-weight: 600; opacity: .6}
+.mobile-keyword{position: absolute; top:calc(38% + 75px); width: 100%; text-align: center; color: #555; font-size: 12px; font-weight: 600}
+.mobile-summary{position: absolute; top:calc(38% + 110px); width: 100%; height: 50%; text-align: left; font-weight: 600; font-size: 16px; line-height: 1.46; white-space: pre-line;
+               box-sizing: border-box; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 50px; border-top: 1px solid #ccc; color: #333; background-color: #fafafa; overflow-y: scroll; }
+.mobile-footer{width: 100vw; height: 60px; position: fixed; z-index: 999; bottom:0;  text-align: center;margin-left: -5vw;}
+.mobile-footer span{position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); font-size: 13px; font-weight: 700; color: #000; opacity: .8;}
+}
